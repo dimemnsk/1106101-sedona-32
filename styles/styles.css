@@ -12,7 +12,10 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
    }
-   
+
+body {
+    font-family: "PT Sans";
+}
 
 .interface {
     background-image: url('../img/interface.png');
@@ -70,6 +73,21 @@
 .nav-link {
     position: relative;
     padding-right: 25px;
+}
+.breadcrumbs-link  {
+    position: relative;
+    padding-right: 25px;
+}
+.variant-home::before {
+    content: "";
+    display: block;
+    background-image:url('../img/home.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
 }
 .button-active, .button-light {
     position: relative;
