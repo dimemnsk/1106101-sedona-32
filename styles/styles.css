@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+   }
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+   }
+   
+
 .interface {
     background-image: url('../img/interface.png');
     display: inline-block;
@@ -50,77 +66,148 @@
     height: 20px;
 }
 
-.fcbook {
-    display: inline-block;
-    /* background-image:url('../img/search.svg'); */
-    background-position: -23px -19px;
-    width: 20px;
-    height: 20px;
-    /* background-color: #6d8fb3; */
-}
-.service-tw {
-    display: inline-block;
-    /* background-image:url('../img/search.svg'); */
-    background-position: -47px -19px;
-    width: 20px;
-    height: 20px;
-    /* background-color: #6d8fb3; */
-}
-.service-yt {
-    display: inline-block;
-    /* background-image:url('../img/search.svg'); */
-    background-position: -72px -19px;
-    width: 20px;
-    height: 20px;
-    /* background-color: #6d8fb3; */
-}
-.search {
-    display: inline-block;
-    background-image:url('../img/search.svg');
-    background-position: 0 0;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
 
+.nav-link {
+    position: relative;
+    padding-right: 25px;
 }
-.search1 {
-    display: inline-block;
-    /* background-image:url('../img/search.svg'); */
-    background-position: -97px -19px;
-    width: 20px;
-    height: 20px;
-    /* background-color: #6d8fb3; */
+.button-active, .button-light {
+    position: relative;
+    padding-right: 25px;
 }
-span.heart:after {
-    display: block;
+.socials-link {
+    position: relative;
+    padding-right: 25px;
+}
+.advantages-item {
+    position: relative;
+    padding-right: 25px;
+}
+.lodging::before {
     content: ' ';
-    background-image: url('../img/heart.svg');
-    background-size: 20px 20px;
-    height: 20px;
-    width: 20px;
-    /* vertical-align: middle; */
-  }
-  span.lodging:after {
     display: block;
-    content: ' ';
     background-image: url('../img/housing.svg');
     background-size: 84px 84px;
     height: 84px;
     width: 84px;
-  }
-  span.food:after {
-    display: block;
-    content: ' ';
-    background-image: url('../img/eating.svg');
-    background-size: 84px 84px;
-    height: 84px;
-    width: 84px;
-  }
-  span.souvenirs:after {
+}
+.food::before {
+  display: block;
+  content: ' ';
+  background-image: url('../img/eating.svg');
+  background-size: 84px 84px;
+  height: 84px;
+  width: 84px;
+}
+.souvenirs::before {
     display: block;
     content: ' ';
     background-image: url('../img/souvenir.svg');
-    background-size: 84px 84px;
-    height: 84px;
-    width: 84px;
+  background-size: 84px 84px;
+  height: 84px;
+  width: 84px;
+}
+.variant-tile::before {
+    content: "";
+    display: block;
+    background-image:url('../img/tile.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.variant-slideshow::before {
+    content: "";
+    display: block;
+    background-image:url('../img/slideshow.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.variant-list::before {
+    content: "";
+    display: block;
+    background-image:url('../img/list.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.social-twitter::before {
+    content: "";
+    display: block;
+    background-image:url('../img/service-tw.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+.social-facebook::before {
+    content: "";
+    display: block;
+    background-image:url('../img/service-fb.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+.social-youtube::before {
+    content: "";
+    display: block;
+    background-image:url('../img/service-yt.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+.nav-link--search::before {
+    content: "";
+    display: block;
+    background-image:url('../img/search.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+.nav-link--heart::before {
+    content: "";
+    display: block;
+    background-image:url('../img/heart.svg');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }

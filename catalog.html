@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона каталог</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -19,18 +19,18 @@
             <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="sedona-banner" href="#"><img src="img/brand-sedona.svg" alt="Баннер Седоны"/></a>
+        <a class="sedona-banner" href="index.html"
+          ><img src="img/brand-sedona.svg" alt="Баннер Седоны"
+        /></a>
         <ul class="nav-user">
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <!-- <span class="visually-hidden">Поиск<img src="img/search.svg" alt=""></span> -->
-              <span class="visually-hidden">Поиск<span class="search"></span></span>
-              <span class="visually-hidden">Поиск<span class="interface search1"></span></span>
+            <a class="nav-link nav-link--search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden heart">Избранное</span>
+            <a class="nav-link nav-link--heart" href="#">
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="nav-item">
@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-        <main class="main-catalog">
+    <main class="main-catalog">
       <section class="header-inner">
         <!-- background image -->
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
@@ -49,7 +49,8 @@
               <a class="breadcrumbs-link"
                 ><span class="visually-hidden interface variant-home"
                   >Главная</span
-              ></a>
+                ></a
+              >
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -171,17 +172,14 @@
             Отсортировать продукты
           </button>
         </form>
-        <a href="#" class="button-light">
-          <span class="visually-hidden mode variant-tile"
-            >Показать карточки</span>
+        <a href="#" class="button-light variant-tile">
+          <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="#" class="button-light">
-          <span class="visually-hidden mode variant-slideshow"
-            >Показать карточку</span>
+        <a href="#" class="button-light variant-slideshow">
+          <span class="visually-hidden">Показать карточку</span>
         </a>
-        <a href="#" class="button-active">
-          <span class="visually-hidden mode variant-list"
-            >Показать список</span>
+        <a href="#" class="button-active variant-list">
+          <span class="visually-hidden">Показать список</span>
         </a>
       </section>
       <section class="cards">
@@ -359,21 +357,27 @@
         <h2 class="visually-hidden">Список соцсетей</h2>
         <ul>
           <li class="socials-item">
-            <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden social service-tw">Twitter</span>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden social fcbook">Facebook</span>
+            <a
+              class="socials-link social-twitter"
+              href="https://twitter.com/htmlacademy_ru"
+            >
+              <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="socials-item">
             <a
-              class="socials-link"
+              class="socials-link social-facebook"
+              href="https://www.facebook.com/htmlacademy"
+            >
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link social-youtube"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
             >
-              <span class="visually-hidden social service-yt">YouTube</span>
+              <span class="visually-hidden l">YouTube</span>
             </a>
           </li>
         </ul>
