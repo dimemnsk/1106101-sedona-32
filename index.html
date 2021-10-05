@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -18,16 +19,24 @@
             <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="sedona-banner" href="#"><img src="img/brand-sedona.svg" alt="Баннер Седоны"/></a>
+        <a class="sedona-banner" href="#"
+          ><img src="img/brand-sedona.svg" alt="Баннер Седоны"
+        /></a>
         <ul class="nav-user">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden">Поиск<img src="img/search.svg" alt=""></span>
+              <!-- <span class="visually-hidden">Поиск<img src="img/search.svg" alt=""></span> -->
+              <span class="visually-hidden"
+                >Поиск<span class="search"></span
+              ></span>
+              <span class="visually-hidden"
+                >Поиск<span class="interface search1"></span
+              ></span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden">Избранное<img src="img/heart.svg" alt=""></span>
+              <span class="visually-hidden heart">Избранное</span>
             </a>
           </li>
           <li class="nav-item">
@@ -39,9 +48,25 @@
     <main class="main-index">
       <h1 class="visually-hidden">Гостиницы в Седоне, штат Аризона</h1>
       <section class="welcome-splash">
-        <img class="welcome" src="img/index-canyon.jpg" alt="Каньон Седоны" width="1200px" height="485"/>
-        <img class="welcome" src="img/divider.svg" alt="декоративный разделитель" />
-        <img class="welcome" src="img/welcome.svg" alt="Логотип Седоны на главной" width="458" height="352"/>
+        <img
+          class="welcome"
+          src="img/index-canyon.jpg"
+          alt="Каньон Седоны"
+          width="1200"
+          height="485"
+        />
+        <img
+          class="welcome"
+          src="img/divider.svg"
+          alt="декоративный разделитель"
+        />
+        <img
+          class="welcome"
+          src="img/welcome.svg"
+          alt="Логотип Седоны на главной"
+          width="458"
+          height="352"
+        />
         <h2 class="welcome-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
@@ -57,31 +82,43 @@
               <span class="advantages-number">-№1-</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="city" src="img/vantage-town.jpg" alt="Городской пейзаж Седоны" width="800" height="384"/>
+            <img
+              class="city"
+              src="img/vantage-town.jpg"
+              alt="Городской пейзаж Седоны"
+              width="800"
+              height="384"
+            />
           </li>
           <li class="advantages-item">
-            <img class="lodging" src="img/housing.svg" alt="Жилье" />
+            <span class="lodging"></span>
             <h3 class="advantages-title">Жилье</h3>
             <p class="advantages-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="advantages-item">
-            <img class="food" src="img/eating.svg" alt="Еда" />
+            <span class="food"></span>
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">
               Всегда заказывайте топовый фирменный бургер, не разочаруетесь!
             </p>
           </li>
           <li class="advantages-item">
-            <img class="souvenirs" src="img/souvenir.svg" alt="Сувениры" />
+            <span class="souvenirs"></span>
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
           <li class="advantages-item-image">
-            <img class="canyon" src="img/vantage-canyon.jpg" alt="Каньон" width="800" height="384"/>
+            <img
+              class="canyon"
+              src="img/vantage-canyon.jpg"
+              alt="Каньон"
+              width="800"
+              height="384"
+            />
             <div class="advantage-content">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <span class="advantages-number">-№2-</span>
@@ -150,12 +187,12 @@
         <ul>
           <li class="socials-item">
             <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter<img src="img/service-tw.svg" alt=""></span>
+              <span class="visually-hidden social service-tw">Twitter</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-link" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook<img src="img/service-fb.svg" alt=""></span>
+              <span class="visually-hidden social fcbook">Facebook</span>
             </a>
           </li>
           <li class="socials-item">
@@ -163,7 +200,7 @@
               class="socials-link"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
             >
-              <span class="visually-hidden">YouTube<img src="img/service-yt.svg" alt=""></span>
+              <span class="visually-hidden social service-yt">YouTube</span>
             </a>
           </li>
         </ul>

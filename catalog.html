@@ -3,37 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
+            <a class="nav-link" href="#">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Гостиницы</a>
+            <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="sedona-banner" href="#"
-          ><img src="img/brand-sedona.svg" alt="Баннер Седоны"
-        /></a>
+        <a class="sedona-banner" href="#"><img src="img/brand-sedona.svg" alt="Баннер Седоны"/></a>
         <ul class="nav-user">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden"
-                >Поиск<img src="img/search.svg" alt=""
-              /></span>
+              <!-- <span class="visually-hidden">Поиск<img src="img/search.svg" alt=""></span> -->
+              <span class="visually-hidden">Поиск<span class="search"></span></span>
+              <span class="visually-hidden">Поиск<span class="interface search1"></span></span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden"
-                >Избранное<img src="img/heart.svg" alt=""
-              /></span>
+              <span class="visually-hidden heart">Избранное</span>
             </a>
           </li>
           <li class="nav-item">
@@ -42,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog">
+        <main class="main-catalog">
       <section class="header-inner">
         <!-- background image -->
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
@@ -50,8 +47,8 @@
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link"
-                ><span class="visually-hidden"
-                  >Главная<img src="img/home.svg" alt="" /></span
+                ><span class="visually-hidden interface variant-home"
+                  >Главная</span
               ></a>
             </li>
             <li class="breadcrumbs-item">
@@ -175,19 +172,16 @@
           </button>
         </form>
         <a href="#" class="button-light">
-          <span class="visually-hidden"
-            >Показать карточки<img src="img/tile.svg" alt=""
-          /></span>
+          <span class="visually-hidden mode variant-tile"
+            >Показать карточки</span>
         </a>
         <a href="#" class="button-light">
-          <span class="visually-hidden"
-            >Показать карточку<img src="img/slideshow.svg" alt=""
-          /></span>
+          <span class="visually-hidden mode variant-slideshow"
+            >Показать карточку</span>
         </a>
         <a href="#" class="button-active">
-          <span class="visually-hidden"
-            >Показать список<img src="img/list.svg" alt=""
-          /></span>
+          <span class="visually-hidden mode variant-list"
+            >Показать список</span>
         </a>
       </section>
       <section class="cards">
@@ -200,9 +194,8 @@
                 width="180"
                 height="120"
                 alt="фотография природы рядом с гостиницей №1"
-              /></a>
-              <a href="#"><h2 class="card-title">Amara Resort & Spa</h2>
-            </a>
+            /></a>
+            <a href="#"><h2 class="card-title">Amara Resort & Spa</h2> </a>
             <p class="card-content">
               <span class="card-subtitle">Гостиница</span>
               <span class="card-subtitle">От 4000 ₽</span>
@@ -224,11 +217,11 @@
                 width="180"
                 height="120"
                 alt="фотография природы рядом с гостиницей №2"
-              /></a>
-              <a href="#">
-                <h2 class="card-title">Desert Quail Inn</h2>
-              </a>
-            
+            /></a>
+            <a href="#">
+              <h2 class="card-title">Desert Quail Inn</h2>
+            </a>
+
             <p class="card-content">
               <span class="card-subtitle">Мотель</span>
               <span class="card-subtitle">От 4000 ₽</span>
@@ -250,11 +243,11 @@
                 width="180"
                 height="120"
                 alt="фотография природы рядом с гостиницей №3"
-              /></a>
-              <a href="#">
-                <h2 class="card-title">Villas at Poco Diablo</h2>
-              </a>
-            
+            /></a>
+            <a href="#">
+              <h2 class="card-title">Villas at Poco Diablo</h2>
+            </a>
+
             <p class="card-content">
               <span class="card-subtitle">Апартаменты</span>
               <span class="card-subtitle">От 2000 ₽</span>
@@ -276,11 +269,11 @@
                 width="180"
                 height="120"
                 alt="фотография природы рядом с гостиницей №4"
-              /></a>
-              <a href="">
-                <h2 class="card-title">GreenTree Inn</h2>
-              </a>
-            
+            /></a>
+            <a href="">
+              <h2 class="card-title">GreenTree Inn</h2>
+            </a>
+
             <p class="card-content">
               <span class="card-subtitle">Гостиница</span>
               <span class="card-subtitle">От 3000 ₽</span>
@@ -367,16 +360,12 @@
         <ul>
           <li class="socials-item">
             <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden"
-                >Twitter<img src="img/service-tw.svg" alt=""
-              /></span>
+              <span class="visually-hidden social service-tw">Twitter</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-link" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden"
-                >Facebook<img src="img/service-fb.svg" alt=""
-              /></span>
+              <span class="visually-hidden social fcbook">Facebook</span>
             </a>
           </li>
           <li class="socials-item">
@@ -384,9 +373,7 @@
               class="socials-link"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
             >
-              <span class="visually-hidden"
-                >YouTube<img src="img/service-yt.svg" alt=""
-              /></span>
+              <span class="visually-hidden social service-yt">YouTube</span>
             </a>
           </li>
         </ul>
