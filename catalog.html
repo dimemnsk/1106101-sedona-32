@@ -55,7 +55,7 @@
         </div>
         <div class="catalog-filters">
           <h2 class="visually-hidden">Подбор жилья по параметрам</h2>
-          <form action="https://htmlacademy.ru/" method="get">
+          <form class="catalog-fiilters-form" action="https://htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Ифраструктура:</legend>
               <ul class="catalog-filter-list">
@@ -67,7 +67,7 @@
                     name="Бассейн"
                     checked
                   />
-                  <label class="control" for="pool">Бассейн</label>
+                  <label class="control-filter-item" for="pool">Бассейн</label>
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -77,7 +77,7 @@
                     name="парковка"
                     checked
                   />
-                  <label class="control" for="parking">Парковка</label>
+                  <label class="control-filter-item" for="parking">Парковка</label>
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -86,7 +86,7 @@
                     type="checkbox"
                     name="WI-FI"
                   />
-                  <label class="control" for="wi-fi">Wi-Fi</label>
+                  <label class="control-filter-item" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -102,7 +102,7 @@
                     value="Гостиница"
                     checked
                   />
-                  <label class="control" for="hotels">Гостиница</label>
+                  <label class="control-filter-item" for="hotels">Гостиница</label>
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -112,7 +112,7 @@
                     name="product-group"
                     value="Мотель"
                   />
-                  <label class="control" for="motels">Мотель</label>
+                  <label class="control-filter-item" for="motels">Мотель</label>
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -121,7 +121,7 @@
                     name="product-group"
                     value="Апартаменты"
                   />
-                  <label class="control">Апартаменты</label>
+                  <label class="control-filter-item">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -156,7 +156,7 @@
         </div>
       </section>
       <section class="sorting">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="sorting-heading">Найдено гостиниц: 38</h2>
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -324,7 +324,7 @@
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p>
+        <p class="subscribe-description">
           Только полезная информация и никакого спама, честное
           бойскаутское&excl;
         </p>
