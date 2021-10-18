@@ -34,12 +34,6 @@ body {
 .main-index {
   flex-grow: 1;
 }
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
 header {
   height: 70px;
   left: 40px;
@@ -57,14 +51,16 @@ header {
   right: 900px;
 }
 .nav-list {
+  list-style: none;
   display: flex;
   padding-left: 0;
 }
 .nav-link-active {
-  border-bottom-style: solid;
+  border-bottom: 2px solid #756257;
   padding-bottom: 20px;
 }
 .nav-user {
+  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -80,12 +76,36 @@ header {
 .page-container-second {
   margin: 0 auto;
 }
-
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 72px;
+}
+.pagination-list {
+  height: 55px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.pagination .pagination-link {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  background: #83b3d3;
+}
+.pagination-link.pagination-current {
+  color: black;
+  background: white;
 }
 .footer {
   display: flex;
@@ -95,23 +115,46 @@ header {
   min-height: 120px;
 }
 .contact-link {
-font-family: PT Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 40px;
-text-align: center;
-text-transform: uppercase;
-color:black;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
 }
 .socials-items {
+  list-style: none;
   padding: 0;
   display: flex;
 }
 .catalog-fiilters-form {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid: 150px / auto-flow 25%;
+  /* auto-flow/  */
+  /* 250px 250px 250px 250px; */
 }
+.catalog-filter-group {
+  border: 0px solid #000;
+}
+.catalog-filter-title {
+  color: white;
+}
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+ 
 
+
+.breadcrumbs-link {
+  color: white;
+  text-decoration: none;
+}
 .buttons-filters {
   display: grid;
   padding: 30px;
@@ -138,9 +181,10 @@ color:black;
 .sorting {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   margin: 0 72px;
+  /* max-width: 50px; */
 }
 /* Cards in catalog */
 .cards {
@@ -148,6 +192,7 @@ color:black;
   padding: 0;
 }
 .cards-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -159,18 +204,20 @@ color:black;
   list-style-type: none;
   display: grid;
   align-items: center;
-  grid-template-columns: 180px 320px 1fr;
-  grid-template-rows: 40px 40px 40px;
-  gap: 0px 30px;
-  grid-template-areas:
-    "a b f"
-    "a c ."
-    "a d g";
+  /* grid-template-columns: 180px 320px 1fr; */
+  /* grid-template-rows: 40px 40px 40px; */
+  gap: 0px 37px;
+  grid:
+    "a b f" 24px
+    "a c ." 18px
+    "a d g" 78px
+    /180px 320px 1fr;
 }
 .card-image-link {
   grid-area: a;
 }
 .card-title-link {
+  text-decoration: none;
   grid-area: b;
 }
 .card-content {
@@ -178,6 +225,8 @@ color:black;
 }
 .buttons-block {
   grid-area: d;
+  align-self: end;
+  margin-bottom: 0;
 }
 .cards-item--button {
   align-self: center;
@@ -194,6 +243,7 @@ color:black;
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -220,31 +270,38 @@ h3 {
   text-align: center;
 }
 .search-title {
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 .search-description {
+  margin: 0 auto;
+  margin-bottom: 73px;
   font-family: PT Sans;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
 }
-.btn-hotel {
-  text-transform: uppercase;
-}
-p {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 36px;
-}
 .subscribe-title {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 94px;
+  margin-bottom: 15px;
+  line-height: 36px;
+  color: white;
   text-transform: uppercase;
 }
 .subscribe-description {
+  margin: 0 auto;
+  padding: 0;
+  color: black;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
+  color: white;
 }
 .advantage-content {
   font-size: 18px;
@@ -253,6 +310,7 @@ p {
   text-align: center;
 }
 .nav-link {
+  text-decoration: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -272,16 +330,24 @@ p {
 .btn-hotel {
   margin: 0 auto;
   width: 575px;
+  height: 60px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+  background: #756257;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 90px;
 }
 .btn-submit {
   width: 200px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  background: #83b3d3;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
 }
 /* section subscribe-email */
 .subscribe-email {
@@ -291,11 +357,21 @@ p {
   background: url(../img/background-email.jpg);
 }
 .subscribe-email-input {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 26px;
   width: 600px;
+  background: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  text-indent: 22px;
 }
+
 .subscribe-form {
   margin: 0 auto;
+  margin-bottom: 94px;
   width: 800px;
+  height: 60px;
   display: flex;
 }
 
@@ -314,12 +390,17 @@ p {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
+  text-indent: 22px;
 }
 /* Catalog - font */
 .header-inner {
   background: url(../img/background-email.jpg) no-repeat;
 }
+.wrapper-filter {
+  margin: 0 72px;
+}
 .header-inner-title {
+  color: white;
   margin: 0;
   padding: 0;
   font-size: 60px;
@@ -340,15 +421,21 @@ p {
   text-align: left;
 }
 .control-filter-item {
+  color: white;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
 }
 .breadcrumbs-list {
+  list-style: none;
   display: flex;
 }
 .button-apply {
+  height: 48px;
+  color: white;
+  background: #83b3d3;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -356,6 +443,7 @@ p {
 }
 
 .button-reset {
+  color: white;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -366,42 +454,73 @@ p {
   font-weight: 700;
   line-height: 39px;
   text-align: left;
+  text-transform: uppercase;
 }
 .select-control {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
+  width: 290px;
 }
 .card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;
   text-align: left;
+  color: black;
 }
 .card-subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
+  color: #333333;
+  margin-right: 50px;
 }
 .card-detailed {
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
   text-align: center;
+  color: white;
+  width: 150px;
+  height: 38px;
+  background: #756257;
+  border-radius: 4px;
+}
+.favorites {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  width: 150px;
+  height: 38px;
+  background: #83b3d3;
+  border-radius: 4px;
+}
+.favorites.active {
+  background: #7db54f;
+  border-radius: 4px;
 }
 .rating {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  text-transform: uppercase;
 }
 .cards-button {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  width: 625px;
+  height: 55px;
+  background: #83b3d3;
+  border-radius: 4px;
+  color: white;
 }
 .pagination-link {
   font-size: 20px;
@@ -424,6 +543,23 @@ p {
   display: grid;
   place-content: center;
   padding-bottom: 137px;
+}
+.newsletter-form {
+  display: flex;
+  height: 60px;
+}
+.btn-newsletter {
+  flex: 200px;
+  background: #83b3d3;
+  border-radius: 0px 10px 10px 0px;
+  text-transform: uppercase;
+  color: white;
+}
+.field {
+  flex: 600px;
+  background: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 /* Вверху шрифты */
 /* Background down */
@@ -504,11 +640,12 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  color: white;
 }
 .button-active,
 .button-light {
   position: relative;
-  padding-right: 25px;
+  /* padding-right: 25px; */
 }
 .socials-link {
   position: relative;
